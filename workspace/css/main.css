@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=M+PLUS+Code+Latin&family=Montserrat:wght@200;400;600&family=Poppins:wght@200&display=swap");
+body, html {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 69%, 78% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 69%, 78% 100%, 0 100%, 0 0);
+  background-color: #ee7300;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 77% 0, 53% 100%, 0 100%);
+            clip-path: polygon(0 0, 77% 0, 53% 100%, 0 100%);
+  }
+}
+
+body header a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@media (min-width: 840px) {
+  body header a {
+    -webkit-padding-start: 4.9em;
+            padding-inline-start: 4.9em;
+  }
+}
+
+@media (min-width: 840px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "primary card";
+  }
+}
+
+main section#card {
+  background-color: white;
+  padding: 20px;
+  margin: 1em auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  width: 50%;
+}
+
+@media (min-width: 840px) {
+  main section#card {
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 1em;
+  }
+}
+
+main section#card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main section#card ul li {
+  margin-bottom: 10px;
+}
+
+main section#card ul li span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffdcbb;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+main section#card ul li strong {
+  display: inline-block;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+  -webkit-margin-before: 10xp;
+          margin-block-start: 10xp;
+}
+
+main section#primary {
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+@media (min-width: 840px) {
+  main section#primary {
+    grid-area: primary;
+    text-align: left;
+    -webkit-margin-end: 0;
+            margin-inline-end: 0;
+    -webkit-margin-start: 4em;
+            margin-inline-start: 4em;
+    -webkit-margin-before: 4em;
+            margin-block-start: 4em;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+  }
+}
+
+main section#primary h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+  main section#primary h1 {
+    width: 30%;
+    font-size: 4em;
+    line-height: .9em;
+  }
+}
+
+main section#primary p {
+  font-size: 1.4em;
+}
+
+main section#primary a {
+  color: #221000;
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: white;
+  display: block;
+  text-align: center;
+  -webkit-margin-before: 50px;
+          margin-block-start: 50px;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  padding: 15px;
+}
+
+@media (min-width: 840px) {
+  main section#primary a {
+    display: inline-block;
+    -webkit-padding-start: 60px;
+            padding-inline-start: 60px;
+    -webkit-padding-end: 60px;
+            padding-inline-end: 60px;
+    -webkit-padding-after: 15px;
+            padding-block-end: 15px;
+    -webkit-padding-before: 15px;
+            padding-block-start: 15px;
+  }
+  main section#primary a a:hover {
+    background-color: colors(lighten);
+  }
+}
+/*# sourceMappingURL=main.css.map */
